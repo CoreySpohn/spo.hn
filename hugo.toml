@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "www.spo.hn"
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Corey Spohn'
 theme = ["PaperMod"]

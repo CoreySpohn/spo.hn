@@ -1,0 +1,58 @@
+# Hugo-specific
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Dependency directories (e.g., if you're using npm or yarn with your theme)
+/node_modules/
+/yarn.lock
+/package-lock.json
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*~
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build directories
+/dist/
+/tmp/
+
+# Archives
+*.tar.gz
+*.zip
+*.rar
+
+# Other files and directories to ignore
+*.bak
+*.tmp
+*.swp
+.sass-cache/
+
+# Temporary file
+.hugo_build.lock
