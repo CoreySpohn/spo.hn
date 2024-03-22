@@ -17,4 +17,6 @@ engineering with a minor in Astronomy and I don't know at if I'm an engineer in
 astronomy or an astronomer who knows a weird amount of controls.
 
 In undergrad at Virginia Tech I did research with Jonathan Boreyko on
-out-of-plane dry zones created by droplets and worked with flying snakes.
+out-of-plane dry zones created by droplets. Additionally, I was pooped on by a
+flying snake in the course of another research project. That is a true
+statement.
