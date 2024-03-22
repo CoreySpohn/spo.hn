@@ -47,7 +47,7 @@ weight = 60
 # Parameters of the home page
 [params]
 [params.homeInfoParams]
-Title = "Corey Spohn"
+# Title = "Corey Spohn"
 Content = "I'm an astronomer/engineer who writes a lot of code to simulate exoplanet missions."
 
 [[params.socialIcons]]
