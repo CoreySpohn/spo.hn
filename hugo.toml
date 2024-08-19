@@ -46,6 +46,8 @@ weight = 60
 
 # Parameters of the home page
 [params]
+ShowCodeCopyButtons = true
+
 [params.homeInfoParams]
 # Title = "Corey Spohn"
 Content = "I'm an astronomer/engineer who writes a lot of code to simulate exoplanet missions."
@@ -54,3 +56,17 @@ Content = "I'm an astronomer/engineer who writes a lot of code to simulate exopl
 name = "GitHub"
 url = "https://github.com/CoreySpohn/"
 icon = "github"
+
+# Python code highlighting
+[params.assets]
+disableHLJS = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+# noClasses = false
+style = "gruvbox"
+
+# pygmentsStyle = "gruvbox"
+# pygmentsUseClasses = true
