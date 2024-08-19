@@ -124,7 +124,7 @@ The colors can be adjusted by changing the ColorCodes class, the ColorFormatter 
 [yippy] INFO 2024-08-19 11:25:27,015 [coronagraph.py:__init__:95] Created LUVOIR-B-VC6_timeseries
 ```
 ### Using the logger
-In your library you'll want to modify the logger (more info later) and save it as something like `logger.py` and add the necessary info to the relevant `__init__.py` files to make it importable. I typically have it saved as `src/package_name/logger.py` 
+In your library you'll want to modify the logger (e.g. change `lib_name`, `lib_color`, `shell_fmt`, and `file_fmt`) and save it as something like `logger.py` and add the necessary info to the relevant `__init__.py` files to make it importable. I typically have it saved as `src/package_name/logger.py` 
  so that in my files I can run 
 ```python
 from yippy.logger import logger
@@ -145,3 +145,10 @@ yippy_logger = logging.getLogger("yippy")
 yippy_logger.setLevel(logging.WARNING)
 ```
 This also can be done by a library, so for example if my `coronagraphoto` library relies on `yippy` but doesn't need the `INFO` statements I can run `yippy_logger.setLevel(logging.WARNING)` at the point that `coronagraphoto` needs to use `yippy`. That can then be overruled by the driver script as well. 
+
+# TL;DR
+1. Copy the `logger.py` code to your library (e.g. `src/my_library/logger.py`)
+2. Adjust the `lib_color` (choose one of [these colors](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797?permalink_comment_id=4619910#gistcomment-4619910)) and `lib_name` (to your library's name)
+3. Change your `src/my_library/__init__.py` file to include `logger` in `__all__` and add a line `from .logger import logger`
+4. Import the logger in your library files (`from my_library.logger import logger`)
+5. Add log statements to your code (`logger.info("This is an info message")`)
