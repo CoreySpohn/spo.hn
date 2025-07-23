@@ -1,0 +1,139 @@
+# Skills
+skills:
+  python_development:
+    name: "Python Development (Expert)"
+    items:
+      - name: "Python"
+        level: "Expert"
+        description: "10+ years of experience, including scientific libraries, visualizations, CI/CD, unit testing, and API design"
+    
+  programming:
+    name: "Programming Languages (Proficient)"
+    items:
+      - name: "Python"
+        level: "Expert"
+        description: "Scientific computing, automation, API development"
+      - name: "C/C++"
+        level: "Proficient"
+        description: "Performance-critical applications, embedded systems"
+      - name: "MATLAB"
+        level: "Proficient"
+        description: "Engineering analysis, control systems, simulation"
+      - name: "SQL"
+        level: "Proficient"
+        description: "Database design, complex queries, data management"
+      - name: "Bash"
+        level: "Proficient"
+        description: "Shell scripting, automation, system administration"
+    
+  software_development:
+    name: "Software Development"
+    items:
+      - name: "Git/GitHub"
+        level: "Expert"
+        description: "Version control, collaborative development, code review"
+      - name: "CI/CD"
+        level: "Advanced"
+        description: "GitHub Actions, automated testing, deployment pipelines"
+      - name: "Unit Testing"
+        level: "Advanced"
+        description: "Test-driven development, pytest, automated testing"
+      - name: "Documentation"
+        level: "Advanced"
+        description: "Technical documentation, API docs, user guides"
+      - name: "Software Architecture"
+        level: "Advanced"
+        description: "Design patterns, scalable applications"
+    
+  systems_platforms:
+    name: "Systems and Platforms"
+    items:
+      - name: "Linux/Unix"
+        level: "Expert"
+        description: "Command line, scripting"
+      - name: "macOS"
+        level: "Advanced"
+        description: "Development environment, productivity tools"
+      - name: "Windows"
+        level: "Advanced"
+        description: "Cross-platform development, system integration"
+    
+  engineering_tools:
+    name: "Engineering and Design Tools"
+    items:
+      - name: "MATLAB/Simulink"
+        level: "Proficient"
+        description: "Control system design, simulation, modeling"
+      - name: "LaTeX"
+        level: "Expert"
+        description: "Technical documentation, scientific publications"
+      - name: "CAD/3D Modeling"
+        level: "Intermediate"
+        description: "Autodesk tools, mechanical design, 3D printing"
+      - name: "Control Systems"
+        level: "Advanced"
+        description: "Feedback control, system identification, optimization"
+      - name: "High-Performance Computing"
+        level: "Expert"
+        description: "Parallel computing, optimization, large-scale simulations"
+    
+  specialized:
+    name: "Aerospace & Technical Applications"
+    items:
+      - name: "Mission Simulation"
+        level: "Expert"
+        description: "End-to-end system modeling, space mission planning"
+      - name: "Orbital Mechanics"
+        level: "Advanced"
+        description: "Trajectory analysis, orbit propagation, astrodynamics"
+      - name: "Optical Systems"
+        level: "Proficient"
+        description: "Telescope design, coronagraphy, image processing"
+      - name: "Statistical Analysis"
+        level: "Advanced"
+        description: "Bayesian methods, uncertainty quantification, data analysis"
+      - name: "Algorithm Development"
+        level: "Expert"
+        description: "Optimization algorithms, constraint programming, numerical methods"
+
+# # Industry-specific skill variations
+# industry_variations:
+#   python_development:
+#     items:
+#       - name: "Python"
+#         level: "Expert"
+#         description: "10+ years developing mission-critical software for aerospace applications, including real-time systems and optimization algorithms"
+  
+#   programming:
+#     items:
+#       - name: "Python"
+#         level: "Expert"
+#         description: "Aerospace software development, automation, system integration"
+#       - name: "C/C++"
+#         level: "Proficient"
+#         description: "Real-time systems, embedded software, performance optimization"
+#       - name: "MATLAB"
+#         level: "Proficient"
+#         description: "Control systems, aerospace simulations, engineering analysis"
+  
+#   specialized:
+#     name: "Aerospace & Defense Applications"
+#     items:
+#       - name: "Space Mission Software"
+#         level: "Expert"
+#         description: "End-to-end mission simulation, spacecraft operations, ground systems"
+#       - name: "Control Systems Engineering"
+#         level: "Advanced"
+#         description: "Flight control, guidance systems, system identification"
+#       - name: "Astrodynamics"
+#         level: "Advanced"
+#         description: "Orbital mechanics, trajectory optimization, mission planning"
+#       - name: "Systems Integration"
+#         level: "Advanced"
+#         description: "Multi-disciplinary systems, requirements management, verification"
+#       - name: "Performance Optimization"
+#         level: "Expert"
+#         description: "Algorithm optimization, parallel computing, real-time processing"
+#       - name: "Technical Leadership"
+#         level: "Advanced"
+#         description: "Project management, technical direction, cross-functional collaboration" 

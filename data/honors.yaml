@@ -1,0 +1,53 @@
+# Honors and Awards
+honors:
+  - id: "nasa-postdoc"
+    title: "NASA Postdoctoral Program Fellowship"
+    organization: "NASA"
+    year: 2023
+    description: "Competitive fellowship for early-career researchers to conduct research at NASA centers"
+    type: "fellowship"
+    
+  - id: "ussery-scholarship"
+    title: "Hugh D. Ussery Scholarship"
+    organization: "Virginia Tech Department of Physics"
+    year: 2017
+    description: "Merit-based scholarship for outstanding physics students"
+    type: "academic"
+    
+  - id: "sigma-pi-sigma"
+    title: "Sigma Pi Sigma Member"
+    organization: "Physics National Honors Society"
+    year: 2016
+    description: "National honor society recognizing outstanding scholarship in physics"
+    type: "academic"
+    
+  - id: "richardson-2016"
+    title: "Robert C. Richardson Scholarship"
+    organization: "Virginia Tech Department of Physics"
+    year: 2016
+    description: "Merit-based scholarship for physics students"
+    type: "academic"
+    
+  - id: "richardson-2015"
+    title: "Robert C. Richardson Scholarship"
+    organization: "Virginia Tech Department of Physics"
+    year: 2015
+    description: "Merit-based scholarship for physics students"
+    type: "academic"
+    
+  - id: "richardson-2014"
+    title: "Robert C. Richardson Scholarship"
+    organization: "Virginia Tech Department of Physics"
+    year: 2014
+    description: "Merit-based scholarship for physics students"
+    type: "academic"
+
+# Configuration for different versions
+honors_config:
+  academic:
+    include_all: true
+    order_by: "year"  # year, importance, type
+    
+  industry:
+    include_types: ["fellowship", "academic"]  # Exclude teaching awards for industry
+    order_by: "importance" 

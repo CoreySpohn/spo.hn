@@ -1,0 +1,52 @@
+# Education
+education:
+  - id: "cornell-phd"
+    degree: "Ph.D. Mechanical and Aerospace Engineering"
+    institution: "Cornell University"
+    location: "Ithaca, New York"
+    start_date: "2018-08"
+    end_date: "2023-08"
+    type: "both"
+    description: >
+      Research focused on end-to-end exoplanet direct imaging mission simulations and optimization.
+    details:
+      - "Advanced dynamics, feedback controls, multivariable controls, linear systems, astrodynamics, and multiwavelength astronomy."
+      - "Dissertation: 'Planning Direct Imaging Observations of Exoplanets With Precursor Information'"
+      - "Advisor: Prof. Dmitry Savransky"
+    
+  - id: "cornell-ms"
+    degree: "M.S. Mechanical and Aerospace Engineering"
+    institution: "Cornell University"
+    location: "Ithaca, New York"
+    start_date: "2018-08"
+    end_date: "2021-10"
+    type: "both"
+    description: >
+      Coursework in advanced dynamics and control systems.
+    details:
+      - "Advanced dynamics, feedback controls, multivariable controls, and linear systems."
+    
+  - id: "vt-esm"
+    degree: "B.S. Engineering Science and Mechanics"
+    institution: "Virginia Tech"
+    location: "Blacksburg, Virginia"
+    start_date: "2013-08"
+    end_date: "2018-05"
+    type: "both"
+    description: >
+      Interdisciplinary engineering program combining mechanics, materials, and mathematics.
+    details:
+      - "Dynamics, fluid dynamics, and materials."
+    
+  - id: "vt-physics"
+    degree: "B.S. Physics"
+    institution: "Virginia Tech"
+    location: "Blacksburg, Virginia"
+    start_date: "2013-08"
+    end_date: "2018-05"
+    type: "both"
+    description: >
+      Comprehensive physics education.
+    details:
+      - "Electrodynamics, classical mechanics, quantum mechanics, and astrophysics."
+      - "Minors in Astronomy and Mathematics"

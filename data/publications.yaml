@@ -1,0 +1,121 @@
+# Publications
+publications:
+  # Key publications - these will be shown in all versions
+  key_publications:
+    - id: "spohn2022scheduling"
+      title: "Scheduling Direct Imaging Observations Based on Radial Velocity Orbital Fits: Best Practices for Translating Orbits and Failure Modes"
+      authors: ["Corey Spohn", "Dmitry Savransky", "Rhonda Morgan"]
+      journal: "The Astronomical Journal"
+      year: 2022
+      volume: "163"
+      pages: "163"
+      type: "peer-reviewed"
+      categories: ["first-author", "key"]
+      
+    - id: "keithly2021integration"
+      title: "Integration Time Adjusted Completeness"
+      authors: ["Dean Keithly", "Dmitry Savransky", "Corey Spohn"]
+      journal: "Journal of Astronomical Telescopes, Instruments, and Systems"
+      year: 2021
+      volume: "7"
+      pages: "037002"
+      type: "peer-reviewed"
+      categories: ["co-author"]
+      
+    - id: "spohn2020frosting"
+      title: "Suppressing Condensation Frosting Using an Out-of-Plane Dry Zone"
+      authors: ["Corey A. Spohn", "S. Farzad Ahmadi", "Saurabh Nath", "Jonathan B. Boreyko"]
+      journal: "Langmuir"
+      year: 2020
+      volume: "36"
+      pages: "15603-15609"
+      type: "peer-reviewed"
+      categories: ["first-author", "experimental"]
+
+  # Conference proceedings
+  conference_proceedings:
+    - id: "spohn2022spie"
+      title: "Direct Imaging Mission Planning with Precursor Radial Velocity Data: Process and Validation"
+      authors: ["Corey Spohn", "Dmitry Savransky"]
+      conference: "SPIE: Space Telescopes and Instrumentation 2022: Optical, Infrared, and Millimeter Wave"
+      location: "Montreal, Quebec"
+      year: 2022
+      type: "conference"
+      categories: ["first-author", "mission-planning"]
+      
+    - id: "spohn2020aas"
+      title: "Dynamically Scheduling Direct Imaging Missions"
+      authors: ["Corey Spohn", "Dmitry Savransky"]
+      conference: "AAS Winter: Extrasolar Planets: Direct Imaging"
+      location: "Honolulu, Hawaii"
+      year: 2020
+      type: "conference"
+      categories: ["first-author", "mission-planning"]
+      
+    - id: "spohn2020spie"
+      title: "How Orbital Fit Uncertainties Impact Dynamic Scheduling"
+      authors: ["Corey Spohn", "Dmitry Savransky"]
+      conference: "SPIE Astronomical Telescopes + Instrumentation: Observatory Operations: Strategies, Processes, and Systems VIII"
+      location: "Online"
+      year: 2020
+      type: "conference"
+      categories: ["first-author", "mission-planning"]
+      
+    - id: "spohn2019eres"
+      title: "Orbital Error Propagation for Direct Detection"
+      authors: ["Corey Spohn", "Dmitry Savransky"]
+      conference: "Emerging Researchers in Exoplanet Science"
+      location: "Ithaca, New York"
+      year: 2019
+      type: "conference"
+      categories: ["first-author", "orbital-mechanics"]
+      
+    - id: "spohn2017icicles"
+      title: "3D Printing Icicles with Evaporating Droplets"
+      authors: ["Corey Spohn", "Farzad Ahmadi", "Jonathan Boreyko"]
+      conference: "APS DFD: Gallery of Fluid Motion"
+      location: "Denver, Colorado"
+      year: 2017
+      type: "conference"
+      categories: ["first-author", "experimental"]
+      
+    - id: "spohn2017frost"
+      title: "A Bridge Too Far: Suppressing Frost Using an Out-of-Plane Dry Zone"
+      authors: ["Corey Spohn", "Farzad Ahmadi", "Saurabh Nath", "Jonathan Boreyko"]
+      conference: "APS DFD: Drops: Anti-icing and Deicing"
+      location: "Denver, Colorado"
+      year: 2017
+      type: "conference"
+      categories: ["first-author", "experimental"]
+
+  # Presentations (can expand this section as needed)
+  presentations:
+    - id: "spohn2022spie_pres"
+      title: "Direct Imaging Mission Planning with Precursor Radial Velocity Data"
+      authors: ["Corey Spohn", "Dmitry Savransky"]
+      conference: "SPIE Space Telescopes and Instrumentation 2022"
+      location: "Montreal, Quebec"
+      year: 2022
+      type: "oral"
+      categories: ["presentation", "first-author"]
+
+# Configuration for different versions
+publication_config:
+  academic:
+    sections:
+      - key_publications
+      - conference_proceedings
+      - presentations
+    max_per_section: null  # Show all
+    
+  industry:
+    sections:
+      - key_publications
+      - conference_proceedings
+    max_per_section: 6  # Limit to most relevant
+    
+  # Filters for different contexts
+  filters:
+    first_author_only: false
+    peer_reviewed_only: false
+    recent_years: null  # null means all years, or set to number like 5 for last 5 years 

@@ -1,0 +1,80 @@
+# Personal Information
+personal:
+  name:
+    first: "Corey"
+    last: "Spohn"
+  
+  contact:
+    email: "corey.a.spohn@nasa.gov"
+    phone: "703-859-6146"  # Optional for industry versions
+    website: "spo.hn"
+    address: "1286 Auburn Grove Lane, Reston Virginia, 20194, United States"
+  
+  social:
+    github: "CoreySpohn"
+    googlescholar: "m4rRp1cAAAAJ"
+    # linkedin: ""
+    # twitter: ""
+  
+  photos:
+    academic: "headshot_github.jpg"
+    industry: "cropped.png"
+  
+  position:
+    academic: "Postdoctoral Researcher {\enskip\cdotp\enskip} Astrophysics Software Developer"
+    industry: "Astrophysics Software Developer"
+  
+  bio:
+    academic: >
+      I am an exoplanet researcher with an odd niche in the yield modeling exoplanet
+      community. Currently I'm a NASA Postdoctoral Program Fellow (which means I'm
+      actually an affiliate of Oak Ridge Associated Universities and not a NASA
+      employee for some reason) at NASA Goddard working with Chris Stark on
+      coronagraph simulations and yield modeling.
+
+      I did my PhD at Cornell University with Dmitry Savransky where I worked on
+      EXOSIMS, the Roman Exposure Time Calculator, and how precursor RV surveys can
+      inform scheduling future direct imaging observations. My PhD was in Aerospace
+      engineering with a minor in Astronomy and I don't know at if I'm an engineer in
+      astronomy or an astronomer who knows a weird amount of controls.
+
+      In undergrad at Virginia Tech I did research with Jonathan Boreyko on
+      out-of-plane dry zones created by droplets. Additionally, I was pooped on by a
+      flying snake in the course of another research project. That is a true
+      statement.
+    
+    industry: >
+      I am a postdoctoral researcher at NASA Goddard. I've been trained as an
+      engineer, physicist, and software developer who specializes in
+      astrophysics applications and optimization. I develop simulation software
+      for exoplanet detection missions and create optimized Python libraries
+      for scientific computing using JAX and NumPy.
+
+      I completed my Aerospace Engineering PhD at Cornell University, with
+      training in advanced dynamics and controls. My dissertation created
+      novel observation scheduling algorithms for a future NASA flagship
+      mission.
+
+# Configuration for different versions
+versions:
+  academic:
+    include_phone: false
+    include_address: false
+    sections:
+      - experience
+      - education
+      - skills
+      - publications
+      - honors
+      - extracurricular
+  
+  industry:
+    include_phone: true
+    include_address: true
+    sections:
+      - summary
+      - experience
+      - skills
+      - education
+      - publications
+      - honors 
