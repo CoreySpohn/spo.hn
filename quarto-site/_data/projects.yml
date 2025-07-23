@@ -1,0 +1,78 @@
+# Portfolio Projects
+projects:
+  - title: "EXOSIMS - Exoplanet Imaging Mission Simulator"
+    description: |
+      Core developer of EXOSIMS, an open-source Python framework for simulating 
+      exoplanet direct imaging missions. The software is used by NASA to evaluate 
+      and optimize future space telescope designs and observation strategies.
+      My contributions include performance optimizations, new scheduling algorithms,
+      and integration with modern coronagraph models.
+    technologies: ["Python", "NumPy", "SciPy", "Astropy", "HPC"]
+    url: "https://github.com/dsavransky/EXOSIMS"
+    tags: ["aerospace", "simulation", "open-source", "nasa", "python"]
+    
+  - title: "yippy - PSF Interpolation with JAX"
+    description: |
+      Created a high-performance Python library for interpolating coronagraph 
+      point spread functions using Fourier interpolation techniques. Built with 
+      JAX for automatic differentiation and GPU acceleration, achieving 100x 
+      speedups over traditional methods.
+    technologies: ["Python", "JAX", "NumPy", "FFT", "GPU Computing"]
+    url: "https://github.com/johndoe/yippy"
+    tags: ["optimization", "jax", "aerospace", "imaging", "performance"]
+    
+  - title: "orbix - Ultra-Fast Kepler Equation Solver"
+    description: |
+      Developed an extremely optimized solver for Kepler's equation using JAX.
+      Features automatic differentiation, vectorization, and JIT compilation,
+      making it ideal for large-scale orbit propagation and optimization problems
+      in mission design.
+    technologies: ["Python", "JAX", "Orbital Mechanics", "Optimization"]
+    url: "https://github.com/johndoe/orbix"
+    tags: ["aerospace", "mathematics", "optimization", "jax", "algorithms"]
+    
+  - title: "RVtoImaging - Precursor Science Integration"
+    description: |
+      Built a comprehensive simulation framework that models the collection of
+      radial velocity precursor data and optimizes direct imaging observation
+      scheduling. Combines Python for high-level logic with C extensions for
+      computational bottlenecks.
+    technologies: ["Python", "C", "Cython", "Monte Carlo", "Optimization"]
+    url: "https://github.com/johndoe/RVtoImaging"
+    tags: ["aerospace", "simulation", "optimization", "research", "hybrid"]
+    
+  - title: "coronagraphoto - Coronagraph Observation Simulator"
+    description: |
+      Created a Python package for simulating realistic coronagraphic observations
+      of exoplanetary systems. Includes physical noise models, detector effects,
+      and post-processing algorithms for generating science-grade synthetic data.
+    technologies: ["Python", "NumPy", "Astropy", "Image Processing"]
+    url: "https://github.com/johndoe/coronagraphoto"
+    tags: ["aerospace", "imaging", "simulation", "python", "optics"]
+    
+  - title: "Roman Coronagraph Exposure Time Calculator"
+    description: |
+      Core developer of the official exposure time calculator for NASA's Roman
+      Space Telescope Coronagraph Instrument. Web-based tool helping astronomers
+      plan observations and optimize science yield.
+    technologies: ["Python", "Django", "JavaScript", "PostgreSQL", "Docker"]
+    url: "https://roman-etc.stsci.edu"
+    tags: ["aerospace", "web-development", "nasa", "tools", "database"]
+    
+  - title: "yieldplotlib - Mission Yield Visualization"
+    description: |
+      Led development of a Python library for loading, analyzing, and visualizing
+      results from different exoplanet yield calculators. Enables standardized
+      comparisons between mission concepts and observation strategies.
+    technologies: ["Python", "Matplotlib", "Plotly", "Pandas", "HDF5"]
+    url: "https://github.com/johndoe/yieldplotlib"
+    tags: ["data-visualization", "python", "aerospace", "analysis", "tools"]
+    
+  - title: "Imaging Mission Database"
+    description: |
+      Architected and implemented a comprehensive database system for the Roman
+      Space Telescope team to manage target lists, observation schedules, and
+      mission constraints. Features real-time updates and multi-user collaboration.
+    technologies: ["PostgreSQL", "Python", "PHP", "REST API", "Docker"]
+    url: "https://github.com/johndoe/imaging-mission-db"
+    tags: ["database", "aerospace", "web-development", "api", "collaboration"]

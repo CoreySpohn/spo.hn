@@ -1,0 +1,19 @@
+# Education
+degrees:
+  - degree: "Ph.D. in Mechanical and Aerospace Engineering"
+    major: "Aerospace Engineering"
+    institution: "Cornell University"
+    location: "Ithaca, New York"
+    date_range: "2018 - 2023"
+    gpa: "4.0/4.0"
+    thesis: "Optimizing Exoplanet Direct Imaging Missions Through Precursor Science and Observation Scheduling"
+    advisor: "Dr. Dmitry Savransky"
+    
+  - degree: "Bachelor of Science in Aerospace Engineering"
+    major: "Aerospace Engineering"
+    institution: "Virginia Tech"
+    location: "Blacksburg, Virginia"
+    date_range: "2014 - 2018"
+    gpa: "3.95/4.0"
+    honors: "Summa Cum Laude, University Honors"
+    minor: "Mathematics"

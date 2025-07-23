@@ -1,0 +1,44 @@
+---
+title: "Skills"
+---
+
+## Technical Skills
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+
+# Load skills data
+with open('_data/skills.yml', 'r') as f:
+    skills_data = yaml.safe_load(f)
+
+def get_skill_level_bar(level):
+    """Convert numeric skill level to visual bar."""
+    filled = "●" * level
+    empty = "○" * (5 - level)
+    return filled + empty
+
+# Print each skill category
+for skill_set in skills_data.get('skill_sets', []):
+    category = skill_set.get('category', '')
+    skills = skill_set.get('skills', [])
+    
+    print(f"### {category}")
+    print()
+    
+    # Create a grid layout for skills
+    print('<div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; margin-bottom: 30px;">')
+    
+    for skill in skills:
+        name = skill.get('name', '')
+        level = skill.get('level', 0)
+        
+        print('<div class="skill-item" style="padding: 10px; background-color: var(--bs-gray-100); border-radius: 5px;">')
+        print(f'<strong>{name}</strong><br>')
+        print(f'<span style="color: var(--bs-primary); font-family: monospace;">{get_skill_level_bar(level)}</span>')
+        print('</div>')
+    
+    print('</div>')
+    print()
+```

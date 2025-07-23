@@ -1,0 +1,39 @@
+---
+title: "Projects"
+---
+
+Here are some of the key projects I have worked on, ranging from open-source scientific software to mission-critical tools for NASA space telescopes.
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+
+# Load the project data from the YAML file
+with open('_data/projects.yml', 'r') as f:
+    projects_data = yaml.safe_load(f)
+
+# Loop through each project and print its details in Markdown format
+for project in projects_data.get('projects', []):
+    title = project.get('title', 'N/A')
+    url = project.get('url', '')
+    description = project.get('description', '')
+    technologies = project.get('technologies', [])
+    
+    # Create the title with a link if a URL is provided
+    if url:
+        print(f"## [{title}]({url})")
+    else:
+        print(f"## {title}")
+    
+    # Print the description
+    print(f"\n{description}\n")
+    
+    # Print the technologies used
+    if technologies:
+        tech_list = ", ".join(f"`{tech}`" for tech in technologies)
+        print(f"**Technologies:** {tech_list}\n")
+    
+    # Add a horizontal rule for separation
+    print("---\n")
+```

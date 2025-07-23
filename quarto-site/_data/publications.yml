@@ -1,0 +1,57 @@
+# Academic Publications
+publications:
+  - title: "Optimizing Direct Imaging Missions Through Integration of Radial Velocity Precursor Science"
+    authors: "Doe, J., Savransky, D., Garrett, D."
+    venue: "The Astronomical Journal"
+    year: 2023
+    doi: "10.3847/1538-3881/xxxxx"
+    url: "https://doi.org/10.3847/1538-3881/xxxxx"
+    type: "journal"
+    
+  - title: "Impact of Field of Regard Constraints on Exoplanet Direct Imaging Mission Yields"
+    authors: "Doe, J., Savransky, D."
+    venue: "Journal of Astronomical Telescopes, Instruments, and Systems"
+    year: 2024
+    doi: "10.1117/1.JATIS.x.x.xxxxx"
+    url: "https://doi.org/10.1117/1.JATIS.x.x.xxxxx"
+    type: "journal"
+    
+  - title: "EXOSIMS 3.0: Enhanced Mission Simulation Capabilities for Next-Generation Space Telescopes"
+    authors: "Savransky, D., Doe, J., Garrett, D., et al."
+    venue: "Proceedings of SPIE"
+    year: 2023
+    doi: "10.1117/12.xxxxxx"
+    url: "https://doi.org/10.1117/12.xxxxxx"
+    type: "conference"
+    
+  - title: "Efficient Algorithms for Coronagraph PSF Interpolation Using JAX"
+    authors: "Doe, J., Morgan, R., Savransky, D."
+    venue: "PASP (Publications of the Astronomical Society of the Pacific)"
+    year: 2024
+    doi: "10.1088/1538-3873/xxxxxx"
+    url: "https://doi.org/10.1088/1538-3873/xxxxxx"
+    type: "journal"
+    
+  - title: "The Roman Coronagraph Exposure Time Calculator: Design and Implementation"
+    authors: "Kammerer, J., Doe, J., Girard, J., et al."
+    venue: "Astronomy & Computing"
+    year: 2023
+    doi: "10.1016/j.ascom.2023.xxxxxx"
+    url: "https://doi.org/10.1016/j.ascom.2023.xxxxxx"
+    type: "journal"
+    
+  - title: "Optimal Scheduling Strategies for Multi-Target Exoplanet Observations"
+    authors: "Doe, J., Savransky, D."
+    venue: "AAS Meeting #241"
+    year: 2023
+    doi: ""
+    url: "https://ui.adsabs.harvard.edu/abs/2023AAS...24110108D"
+    type: "conference"
+    
+  - title: "Machine Learning Approaches to Exoplanet Yield Prediction"
+    authors: "Doe, J., Chen, L., Savransky, D."
+    venue: "Machine Learning and the Physical Sciences Workshop, NeurIPS"
+    year: 2022
+    doi: ""
+    url: "https://ml4physicalsciences.github.io/2022/"
+    type: "workshop"

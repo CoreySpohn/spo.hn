@@ -1,0 +1,31 @@
+# Personal Information - The core identity data
+info:
+  name: "John Doe"
+  firstname: "John"
+  lastname: "Doe"
+  position: "Aerospace Engineer & Data Scientist"
+  title: "Ph.D., NASA Postdoctoral Fellow"
+  summary: |
+    I am an aerospace engineer and data scientist with expertise in exoplanet detection,
+    mission optimization, and high-performance scientific computing. Currently serving as
+    a NASA Postdoctoral Fellow at Goddard Space Flight Center, I develop advanced
+    simulation software and optimization algorithms for future space telescopes.
+    
+    My work focuses on improving the scientific yield of direct imaging missions through
+    innovative observation scheduling algorithms and precursor science integration.
+    I have extensive experience in Python, JAX, and scientific computing, with a
+    particular emphasis on creating efficient, scalable solutions for complex
+    astronomical problems.
+
+contact:
+  email: "john.doe@example.com"
+  phone: "+1 (555) 123-4567"
+  address: "Greenbelt, Maryland, USA"
+  website: "https://johndoe.example.com"
+
+social:
+  linkedin: "https://www.linkedin.com/in/johndoe"
+  github: "https://github.com/johndoe"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+  googlescholar: "https://scholar.google.com/citations?user=XXXXXX"
+  twitter: "https://twitter.com/johndoe"

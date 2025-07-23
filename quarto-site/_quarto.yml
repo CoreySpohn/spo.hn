@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: scripts/generate_resume_data.py
+
+website:
+  title: "John Doe | Aerospace & Data Science"
+  site-url: "https://your-github-username.github.io/your-repo-name"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: experience.qmd
+        text: Experience
+      - href: skills.qmd
+        text: Skills
+      - href: publications.qmd
+        text: Publications
+      - href: cv/cv.pdf
+        text: CV
+  page-footer: "Copyright 2024, John Doe"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 2
+
+
+

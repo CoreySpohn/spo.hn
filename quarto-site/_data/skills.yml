@@ -1,0 +1,109 @@
+# Skills organized by category
+skill_sets:
+  - category: "Programming Languages"
+    skills:
+      - name: "Python"
+        level: 5
+        field: ["data-science", "aerospace", "research", "software-development"]
+      - name: "JAX"
+        level: 4
+        field: ["data-science", "optimization", "research"]
+      - name: "C/C++"
+        level: 3
+        field: ["software-development", "aerospace", "performance"]
+      - name: "JavaScript"
+        level: 3
+        field: ["software-development", "web-development"]
+      - name: "SQL"
+        level: 3
+        field: ["data-science", "database"]
+      - name: "MATLAB"
+        level: 4
+        field: ["aerospace", "research", "engineering"]
+      - name: "Julia"
+        level: 2
+        field: ["data-science", "research"]
+      
+  - category: "Scientific Computing & Data Science"
+    skills:
+      - name: "NumPy"
+        level: 5
+        field: ["data-science", "research", "python"]
+      - name: "SciPy"
+        level: 5
+        field: ["data-science", "research", "python"]
+      - name: "Pandas"
+        level: 4
+        field: ["data-science", "data-analysis", "python"]
+      - name: "Matplotlib/Seaborn"
+        level: 5
+        field: ["data-visualization", "python", "research"]
+      - name: "JAX Ecosystem"
+        level: 4
+        field: ["optimization", "machine-learning", "research"]
+      - name: "Astropy"
+        level: 5
+        field: ["aerospace", "astronomy", "python"]
+      - name: "PyTorch"
+        level: 3
+        field: ["machine-learning", "deep-learning", "research"]
+      
+  - category: "Aerospace & Mission Design"
+    skills:
+      - name: "EXOSIMS"
+        level: 5
+        field: ["aerospace", "mission-planning", "simulation"]
+      - name: "Coronagraph Modeling"
+        level: 5
+        field: ["aerospace", "optics", "imaging"]
+      - name: "Orbit Mechanics"
+        level: 5
+        field: ["aerospace", "mathematics", "physics"]
+      - name: "Telescope Optics"
+        level: 4
+        field: ["aerospace", "optics", "physics"]
+      - name: "Mission Yield Optimization"
+        level: 5
+        field: ["aerospace", "optimization", "mission-planning"]
+      - name: "STK (Systems Tool Kit)"
+        level: 3
+        field: ["aerospace", "mission-planning", "simulation"]
+      
+  - category: "Software Development & Tools"
+    skills:
+      - name: "Git/GitHub"
+        level: 5
+        field: ["software-development", "version-control"]
+      - name: "Docker"
+        level: 3
+        field: ["software-development", "devops"]
+      - name: "CI/CD (GitHub Actions)"
+        level: 4
+        field: ["software-development", "devops", "automation"]
+      - name: "Unit Testing (pytest)"
+        level: 4
+        field: ["software-development", "testing"]
+      - name: "Documentation (Sphinx)"
+        level: 4
+        field: ["software-development", "documentation"]
+      - name: "Agile/Scrum"
+        level: 3
+        field: ["software-development", "project-management"]
+      
+  - category: "Data Management & Visualization"
+    skills:
+      - name: "PostgreSQL/MySQL"
+        level: 3
+        field: ["database", "data-management"]
+      - name: "MongoDB"
+        level: 2
+        field: ["database", "nosql"]
+      - name: "Plotly/Dash"
+        level: 4
+        field: ["data-visualization", "web-development", "python"]
+      - name: "D3.js"
+        level: 2
+        field: ["data-visualization", "javascript", "web-development"]
+      - name: "Tableau"
+        level: 2
+        field: ["data-visualization", "business-intelligence"]

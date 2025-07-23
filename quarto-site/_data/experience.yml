@@ -1,0 +1,82 @@
+# Professional Experience
+jobs:
+  - title: "NASA Postdoctoral Program Fellow"
+    company: "Goddard Space Flight Center"
+    location: "Greenbelt, Maryland"
+    start_date: "2023-09"
+    end_date: "Present"
+    achievements:
+      - description: "Led a study on how future direct imaging telescope's field of regard will impact the use of precursor science"
+        tags: ["research", "aerospace", "mission-planning"]
+      - description: "Member of HWO's Exoplanet Science Yield Working Group advisory committee and task group lead for the Visualizations Task Group"
+        tags: ["leadership", "aerospace", "visualization"]
+      - description: "Continued development of the open source direct imaging mission simulation software EXOSIMS"
+        tags: ["python", "software-development", "aerospace"]
+      - description: "Created 'yippy', a Python tool that interpolates coronagraph point spread functions using Fourier interpolation and JAX optimization"
+        tags: ["python", "jax", "optimization", "data-science"]
+      - description: "Created 'coronagraphoto', a Python tool for simulating coronagraphic observations, enabling realistic imaging pipelines"
+        tags: ["python", "simulation", "aerospace", "imaging"]
+      - description: "Led development of 'yieldplotlib', a Python library for loading and comparing data from direct imaging yield calculators"
+        tags: ["python", "data-visualization", "software-development"]
+      - description: "Created 'orbix', an extremely optimized solver for Kepler's equation, written in Python with JAX"
+        tags: ["python", "jax", "optimization", "aerospace", "mathematics"]
+      - description: "Created 'pleaserender', a Python animation library for exoplanet direct imaging visualization"
+        tags: ["python", "visualization", "animation", "aerospace"]
+  
+  - title: "Ph.D. Candidate / Research Assistant"
+    company: "Space Imaging and Optical Systems Lab, Cornell University"
+    location: "Ithaca, New York"
+    start_date: "2018-08"
+    end_date: "2023-08"
+    achievements:
+      - description: "Researched methods to improve yield of future exoplanet direct imaging missions through observation scheduling and precursor science"
+        tags: ["research", "aerospace", "optimization", "mission-planning"]
+      - description: "Developed novel observation scheduling algorithm for directly imaging exoplanets detected with radial velocity"
+        tags: ["algorithm-development", "aerospace", "research", "optimization"]
+      - description: "Created 'RVtoImaging', a Python/C yield code simulating precursor RV data collection and direct imaging observation scheduling"
+        tags: ["python", "c", "simulation", "software-development", "aerospace"]
+      - description: "Core developer of EXOSIMS, a direct imaging mission simulator used by NASA to evaluate future missions"
+        tags: ["python", "software-development", "nasa", "aerospace", "simulation"]
+      - description: "Core developer of the Imaging Mission Database for Roman Space Telescope Coronagraph Instrument observation scheduling"
+        tags: ["python", "sql", "php", "javascript", "database", "aerospace"]
+      - description: "Core developer of the Roman Space Telescope Coronagraph Imager's Exposure Time Calculator"
+        tags: ["python", "aerospace", "software-development", "optics"]
+      - description: "Created 'exoverses', a Python package providing unified interface between EXOSIMS and ExoVista planetary systems"
+        tags: ["python", "software-development", "aerospace", "api-design"]
+      - description: "Led discussions and guest lectures for Feedback Control Systems class"
+        tags: ["teaching", "control-systems", "engineering"]
+      - description: "Led discussions for introductory Astronomy class"
+        tags: ["teaching", "astronomy", "education"]
+  
+  - title: "Undergraduate Research Assistant"
+    company: "Nature Inspired Fluids and Interfaces Group, Virginia Tech"
+    location: "Blacksburg, Virginia"
+    start_date: "2017-01"
+    end_date: "2018-08"
+    achievements:
+      - description: "Designed and executed experiments studying passive anti-frosting surfaces and inter-droplet ice bridging mechanics"
+        tags: ["research", "experimental-design", "fluid-dynamics", "materials"]
+      - description: "Created Python applications to accelerate research calculations and automate data processing"
+        tags: ["python", "data-analysis", "automation", "research"]
+  
+  - title: "Team Leader - Robotics Capstone Project"
+    company: "Virginia Tech"
+    location: "Blacksburg, Virginia"
+    start_date: "2017-03"
+    end_date: "2018-05"
+    achievements:
+      - description: "Led team meetings, coordinated programming efforts, facilitated communication, and resolved team conflicts"
+        tags: ["leadership", "project-management", "teamwork"]
+      - description: "Developed human-robot interaction model to predict crowd movements in response to robotic intervention during panic situations"
+        tags: ["robotics", "modeling", "research", "human-factors"]
+      - description: "Built team of robots using pursuit-evasion algorithms and motion tracking to refine human-robot interaction model"
+        tags: ["robotics", "programming", "algorithm-development", "hardware"]
+  
+  - title: "Undergraduate Research Assistant"
+    company: "The Socha Lab, Virginia Tech"
+    location: "Blacksburg, Virginia"
+    start_date: "2016-08"
+    end_date: "2017-01"
+    achievements:
+      - description: "Utilized 3D motion capture system to analyze flying snake locomotion across gaps between branches"
+        tags: ["research", "biomechanics", "data-analysis", "motion-capture"]

@@ -1,0 +1,60 @@
+---
+title: "Experience"
+---
+
+## Professional Experience
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+from datetime import datetime
+
+# Load experience data
+with open('_data/experience.yml', 'r') as f:
+    experience_data = yaml.safe_load(f)
+
+def format_date_range(start, end):
+    """Formats start and end dates into a readable string."""
+    try:
+        start_date = datetime.strptime(start, '%Y-%m')
+        start_str = start_date.strftime('%b %Y')
+    except:
+        start_str = start
+    
+    if end.lower() == 'present':
+        end_str = 'Present'
+    else:
+        try:
+            end_date = datetime.strptime(end, '%Y-%m')
+            end_str = end_date.strftime('%b %Y')
+        except:
+            end_str = end
+    
+    return f"{start_str} - {end_str}"
+
+# Print each job
+for job in experience_data.get('jobs', []):
+    title = job.get('title', '')
+    company = job.get('company', '')
+    location = job.get('location', '')
+    start_date = job.get('start_date', '')
+    end_date = job.get('end_date', '')
+    achievements = job.get('achievements', [])
+    
+    # Print job header
+    print(f"### {title}")
+    print(f"**{company}** | {location}")
+    print(f"*{format_date_range(start_date, end_date)}*")
+    print()
+    
+    # Print achievements
+    if achievements:
+        for achievement in achievements:
+            desc = achievement.get('description', '')
+            print(f"- {desc}")
+        print()
+    
+    print("---")
+    print()
+```

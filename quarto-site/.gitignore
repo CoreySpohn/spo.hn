@@ -1,0 +1,19 @@
+/.quarto/
+_site/
+docs/
+*.pdf
+
+# Temporary data files
+_data/tmp_*.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db

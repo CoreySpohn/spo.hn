@@ -1,0 +1,75 @@
+---
+title: "Welcome"
+---
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+
+# Load personal data
+with open('_data/personal.yml', 'r') as f:
+    personal = yaml.safe_load(f)
+
+# Extract info
+info = personal.get('info', {})
+contact = personal.get('contact', {})
+social = personal.get('social', {})
+
+# Print name and title
+print(f"# {info.get('name', 'Name')}")
+print(f"### {info.get('position', 'Position')}")
+print(f"#### {info.get('title', '')}")
+print()
+
+# Print summary
+print("## About Me")
+print(info.get('summary', ''))
+print()
+
+# Contact information
+print("## Contact")
+print()
+print(f"📧 Email: [{contact.get('email')}](mailto:{contact.get('email')})")
+print(f"📱 Phone: {contact.get('phone')}")
+print(f"📍 Location: {contact.get('address')}")
+print()
+
+# Social links
+print("## Connect")
+print()
+if social.get('github'):
+    print(f"- [GitHub]({social.get('github')})")
+if social.get('linkedin'):
+    print(f"- [LinkedIn]({social.get('linkedin')})")
+if social.get('orcid'):
+    print(f"- [ORCID]({social.get('orcid')})")
+if social.get('googlescholar'):
+    print(f"- [Google Scholar]({social.get('googlescholar')})")
+if social.get('twitter'):
+    print(f"- [Twitter/X]({social.get('twitter')})")
+```
+
+## Recent Highlights
+
+```{python}
+#| echo: false
+#| output: asis
+# Load projects data
+with open('_data/projects.yml', 'r') as f:
+    projects_data = yaml.safe_load(f)
+
+# Show first 3 projects as highlights
+projects = projects_data.get('projects', [])[:3]
+for project in projects:
+    title = project.get('title', 'N/A')
+    url = project.get('url', '')
+    description = project.get('description', '').split('\n')[0]  # First paragraph
+    
+    if url:
+        print(f"### [{title}]({url})")
+    else:
+        print(f"### {title}")
+    print(f"{description}")
+    print()
+```

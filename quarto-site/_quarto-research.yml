@@ -1,0 +1,7 @@
+project:
+  render:
+    - resume_template.qmd
+
+format:
+  awesomecv-typst:
+    output-file: "John_Doe_Resume_Research.pdf"

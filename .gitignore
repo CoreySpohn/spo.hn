@@ -56,3 +56,5 @@ Thumbs.db
 
 # Temporary file
 .hugo_build.lock
+
+/.quarto/

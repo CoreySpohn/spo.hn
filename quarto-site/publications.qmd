@@ -1,0 +1,65 @@
+---
+title: "Publications"
+---
+
+## Academic Publications
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+
+# Load publications data
+with open('_data/publications.yml', 'r') as f:
+    publications_data = yaml.safe_load(f)
+
+# Group publications by type
+journals = [p for p in publications_data.get('publications', []) if p.get('type') == 'journal']
+conferences = [p for p in publications_data.get('publications', []) if p.get('type') == 'conference']
+workshops = [p for p in publications_data.get('publications', []) if p.get('type') == 'workshop']
+
+def print_publication(pub):
+    """Print a single publication in citation format."""
+    title = pub.get('title', '')
+    authors = pub.get('authors', '')
+    venue = pub.get('venue', '')
+    year = pub.get('year', '')
+    doi = pub.get('doi', '')
+    url = pub.get('url', '')
+    
+    # Format the citation
+    print(f"- {authors} ({year}). ", end='')
+    
+    if url:
+        print(f'**[{title}]({url})**. ', end='')
+    else:
+        print(f'**{title}**. ', end='')
+    
+    print(f'*{venue}*', end='')
+    
+    if doi:
+        print(f'. DOI: [{doi}](https://doi.org/{doi})', end='')
+    
+    print('.\n')
+
+# Print journal articles
+if journals:
+    print("### Journal Articles\n")
+    for pub in sorted(journals, key=lambda x: x.get('year', 0), reverse=True):
+        print_publication(pub)
+    print()
+
+# Print conference papers
+if conferences:
+    print("### Conference Proceedings\n")
+    for pub in sorted(conferences, key=lambda x: x.get('year', 0), reverse=True):
+        print_publication(pub)
+    print()
+
+# Print workshop papers
+if workshops:
+    print("### Workshop Papers\n")
+    for pub in sorted(workshops, key=lambda x: x.get('year', 0), reverse=True):
+        print_publication(pub)
+    print()
+```
