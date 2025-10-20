@@ -1,0 +1,20 @@
+{{/* Publications shortcode: renders list from data/dotme/data/publications.yml */}}
+{{- $list := site.Data.dotme.data.publications.publications -}}
+{{- if not $list -}}
+<p>No publications found.</p>
+{{- else -}}
+{{- $sorted := sort $list "year" "desc" -}}
+<ul class="publications">
+    {{- range $sorted }}
+    <li>
+        <strong>{{ .title }}</strong><br />
+        {{- with .authors }}{{ delimit . ", " }}. {{- end -}}
+        {{- with .venue }}<em>{{ . }}</em>{{ end -}}
+        {{- with .year }} ({{ . }}){{ end -}}
+        {{- with .status }} — {{ . }}{{ end -}}.
+        {{- if .doi }} <a href="https://doi.org/{{ .doi }}">DOI</a>{{ else if .url }} <a href="{{ .url }}">Link</a>{{
+        end -}}
+    </li>
+    {{- end }}
+</ul>
+{{- end -}}
