@@ -1,20 +1,81 @@
 {{/* Publications shortcode: renders list from data/dotme/data/publications.yml */}}
 {{- $list := site.Data.dotme.data.publications.publications -}}
-{{- if not $list -}}
+{{- $published := where $list "status" "Published" -}}
+{{- if not $published -}}
 <p>No publications found.</p>
 {{- else -}}
-{{- $sorted := sort $list "year" "desc" -}}
+
+<h2>Journal publications</h2>
+
+<h3>First author</h3>
+{{- $journals := where $published "type" "journal" -}}
+{{- $j_first := where $journals "first_author" true -}}
+{{- $j_first_sorted := sort $j_first "year" "desc" -}}
+{{- if not $j_first_sorted -}}
+<p>None.</p>
+{{- else -}}
 <ul class="publications">
-    {{- range $sorted }}
-    <li>
-        <strong>{{ .title }}</strong><br />
-        {{- with .authors }}{{ delimit . ", " }}. {{- end -}}
-        {{- with .venue }}<em>{{ . }}</em>{{ end -}}
-        {{- with .year }} ({{ . }}){{ end -}}
-        {{- with .status }} — {{ . }}{{ end -}}.
-        {{- if .doi }} <a href="https://doi.org/{{ .doi }}">DOI</a>{{ else if .url }} <a href="{{ .url }}">Link</a>{{
-        end -}}
-    </li>
+    {{- range $j_first_sorted }}
+    {{- partial "publication_item.html" . -}}
     {{- end }}
 </ul>
+{{- end -}}
+
+<h3>Contributing author</h3>
+{{- $j_contrib := where $journals "first_author" false -}}
+{{- $j_contrib_sorted := sort $j_contrib "year" "desc" -}}
+{{- if not $j_contrib_sorted -}}
+<p>None.</p>
+{{- else -}}
+<ul class="publications">
+    {{- range $j_contrib_sorted }}
+    {{- partial "publication_item.html" . -}}
+    {{- end }}
+</ul>
+{{- end -}}
+
+<h2>Conference proceedings</h2>
+
+<h3>First author</h3>
+{{- $confs := where $published "type" "conference_proceedings" -}}
+{{- $c_first := where $confs "first_author" true -}}
+{{- $c_first_sorted := sort $c_first "year" "desc" -}}
+{{- if not $c_first_sorted -}}
+<p>None.</p>
+{{- else -}}
+<ul class="publications">
+    {{- range $c_first_sorted }}
+    {{- partial "publication_item.html" . -}}
+    {{- end }}
+</ul>
+{{- end -}}
+
+<h3>Contributing author</h3>
+{{- $c_contrib := where $confs "first_author" false -}}
+{{- $c_contrib_sorted := sort $c_contrib "year" "desc" -}}
+{{- if not $c_contrib_sorted -}}
+<p>None.</p>
+{{- else -}}
+<ul class="publications">
+    {{- range $c_contrib_sorted }}
+    {{- partial "publication_item.html" . -}}
+    {{- end }}
+</ul>
+{{- end -}}
+
+<h2>Ph.D. Dissertation</h2>
+
+
+{{- $theses := where $published "type" "thesis" -}}
+{{- $theses_sorted := sort $theses "year" "desc" -}}
+{{- if not $theses_sorted -}}
+<p>None.</p>
+{{- else -}}
+<ul class="publications">
+    {{- range first 1 $theses_sorted -}}
+    {{- partial "publication_item.html" . -}}
+    {{- end }}
+</ul>
+{{- end -}}
+
 {{- end -}}

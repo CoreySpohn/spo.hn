@@ -1,0 +1,8 @@
+<li>
+    <strong>{{ .title }}</strong><br />
+    {{- with .authors }}{{ delimit . ", " }}. {{- end -}}
+    {{- with .venue }} <em>{{ . }}</em>{{ end -}}
+    {{- with .year }} ({{ . }}){{ end -}}
+    {{- if .doi }} <a href="https://doi.org/{{ .doi }}">DOI</a>{{ else if .url }} <a href="{{ .url }}">Link</a>{{ end
+    -}}
+</li>

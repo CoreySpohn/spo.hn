@@ -3,7 +3,9 @@ languageCode = 'en-us'
 title = 'Corey Spohn'
 theme = ["PaperMod"]
 
-mainSections = ["posts", "projects"]
+ignoreFiles = ["^data/dotme/.*\\.md$"]
+
+mainSections = ["projects", "posts"]
 
 # Creating the menu
 [menu]
@@ -70,3 +72,11 @@ style = "gruvbox"
 
 # pygmentsStyle = "gruvbox"
 # pygmentsUseClasses = true
+
+[module]
+# Use mounts to exclude non-data files (e.g., README.md) from the data tree,
+# while still exposing the YAML under data/dotme/data at the expected path.
+[[module.mounts]]
+source = "data"
+target = "data"
+excludeFiles = ["dotme/README.md"]
