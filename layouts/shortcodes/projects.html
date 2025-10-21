@@ -1,0 +1,14 @@
+{{/* Projects shortcode: renders list from data/dotme/data/projects.yml */}}
+{{- $list := site.Data.dotme.data.projects.projects -}}
+{{- if not $list -}}
+<p>No projects found.</p>
+{{- else -}}
+
+<ul class="projects">
+    {{- range $proj := $list }}
+    {{- partial "project_item.html" $proj -}}
+    {{- end }}
+
+    {{- /* If you want to add future sorting/filtering, do it above this line. */ -}}
+</ul>
+{{- end -}}

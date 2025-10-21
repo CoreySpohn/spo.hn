@@ -1,0 +1,34 @@
+{{- /* Injects boilerplate (short-description, description, link) from data YAML for project pages.
+Match page folder name to urlized YAML title. Allows override via .Params.yaml_key. */ -}}
+{{- $list := site.Data.dotme.data.projects.projects -}}
+{{- if not $list -}}
+{{- else -}}
+{{- $slug := .Params.yaml_key | default (path.Base (path.Dir .File.Path)) -}}
+{{- $match := dict -}}
+{{- range $it := $list -}}
+{{- $itSlug := urlize $it.title -}}
+{{- if eq $itSlug $slug -}}
+{{- $match = $it -}}
+{{- end -}}
+{{- end -}}
+{{- with $match -}}
+{{- with .short_description -}}
+<!-- <p class="project-short">{{ . | markdownify }}</p> -->
+{{- end -}}
+{{- with .description -}}
+<div class="project-desc">
+    {{ . | markdownify }}
+</div>
+{{- end -}}
+{{- if or .url .technologies -}}
+<div class="project-meta">
+    {{- with .url -}}
+    <p><strong>Link:</strong> <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></p>
+    {{- end -}}
+    <!-- {{- with .technologies -}} -->
+    <!-- <p><strong>Tech:</strong> {{ delimit . ", " }}</p> -->
+    <!-- {{- end -}} -->
+</div>
+{{- end -}}
+{{- end -}}
+{{- end -}}

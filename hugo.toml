@@ -3,8 +3,6 @@ languageCode = 'en-us'
 title = 'Corey Spohn'
 theme = ["PaperMod"]
 
-ignoreFiles = ["^data/dotme/.*\\.md$"]
-
 mainSections = ["projects", "posts"]
 
 # Creating the menu
@@ -17,27 +15,27 @@ url = "/"
 weight = 10
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 20
-
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 30
-
-[[menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/projects/"
-weight = 40
+weight = 20
 
 [[menu.main]]
 identifier = "publications"
 name = "Publications"
 url = "/publications/"
+weight = 30
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 40
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
 weight = 50
 
 [[menu.main]]
@@ -52,7 +50,7 @@ ShowCodeCopyButtons = true
 
 [params.homeInfoParams]
 # Title = "Corey Spohn"
-Content = "I'm an astronomer/engineer who writes a lot of code to simulate exoplanet missions."
+Content = "I'm an astronomer/engineer who writes a lot of code to simulate direct imaging exoplanet missions."
 
 [[params.socialIcons]]
 name = "GitHub"

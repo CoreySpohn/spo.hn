@@ -1,0 +1,35 @@
+{{- /* Renders a single project item. Expects keys: title, description, technologies, url, tags, image (optional), video
+(optional) */ -}}
+<li class="project">
+    <div class="project-media">
+        {{- with .video }}
+        <video controls preload="metadata" width="640">
+            <source src="{{ . }}" type="video/mp4" />
+        </video>
+        {{- else -}}
+        {{- with .image }}
+        <img src="{{ . }}" alt="{{ $.title }} thumbnail" loading="lazy" />
+        {{- end -}}
+        {{- end }}
+    </div>
+    <div class="project-body">
+        <h3 class="project-title">
+            {{- if .url -}}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+            {{- else -}}
+            {{ .title }}
+            {{- end -}}
+        </h3>
+        {{- with .description -}}
+        <p class="project-description">{{ . | markdownify }}</p>
+        {{- end -}}
+
+        {{- with .technologies -}}
+        <p class="project-tech"><strong>Tech:</strong> {{ delimit . ", " }}</p>
+        {{- end -}}
+
+        {{- with .tags -}}
+        <p class="project-tags"><strong>Tags:</strong> {{ delimit . ", " }}</p>
+        {{- end -}}
+    </div>
+</li>

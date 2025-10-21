@@ -2,6 +2,7 @@
 title = 'Colorful Python Logging'
 date = 2024-08-19T12:14:46-04:00
 draft = false
+summary = "How I do logging in Python"
 +++
 
 # Goal
